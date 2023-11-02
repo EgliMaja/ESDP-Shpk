@@ -1,18 +1,18 @@
 # Frontend Test
-Ne HTML , CSS dhe JavaScript ( pa perdorur librari ) krijoni:
+In HTML, CSS and JavaScript (without using libraries) create:
 
-- Nje file input i cili ngarkon , lexon dhe parson skedarin qe ndodhet brenda test1M.zip
-  dhe shfaq elementet ne DOM sipar formatit te paraqitu ne video.
+- An input file which loads, reads and parses the file inside test1M.zip
+    and display the elements in the DOM according to the format displayed in the video.
 
-- Lartesia e secilit element te listes te jete 30px.
+- The height of each element of the list should be 30px.
 
-- Nje search box per filtrimin e elementeve sipas:
-  Emrit , mbiemrit , rruges , qytetit.
+- A search box for filtering elements according to:
+    Name, surname, street, city.
 
-- Ne fillim te elementit te shfaqet dhe numri rendor i tij ne liste.
+- At the beginning of the element, the number of its render in the list should also appear.
 
-- Nje mesazh kur nuk u gjet asnje e dhene.
+- A message when no data was found.
 
-- Gjate ngarkimit te skedarit te shfaqet nje loader sipas deshires (https://loading.io/css/).
+- During the loading of the file, find a loader as desired (https://loading.io/css/).
 
-* Scroll-i ne liste duhet te jete i shpejte dhe mos te kete ngecje pavarsisht parametrave te pajisjes. 
+* The scrolling in the list should be fast and there should be no lag regardless of the device parameters.
