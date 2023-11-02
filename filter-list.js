@@ -16,15 +16,12 @@ content.style.backgroundColor = "007BFF";
 /** Show The filter input and file content after uploading the file **/
 uploadFileInput.addEventListener("change", (event) => {
     const file = event.target.files[0];
-    console.log(file, "File")
     if (file) {
-        console.log(file.size, "Size")
         load_indicator.style.display = "block";
         const reader = new FileReader();
 
         reader.onload = (e) => {
             const fileContent = e.target.result;
-            console.log(fileContent, "File Content ")
 
             filterInput.style.visibility = "visible";
             content.style.backgroundColor = "white";
@@ -36,7 +33,6 @@ uploadFileInput.addEventListener("change", (event) => {
             DataList = fileContent.split("\n");
             updateVisibleITems(DataList);
             load_indicator.style.display = "none";
-            console.log(DataList, "Data to be filtered");
         }
 
         reader.readAsText(file);
@@ -49,12 +45,10 @@ filterInput.addEventListener("input", () => {
 
     filterTimeOut = setTimeout(() => {
         let searchText = filterInput.value;
-        console.log(searchText);
         let filterData = DataList.filter((record) =>
             record.toLowerCase().includes(searchText.toLowerCase())
         );
         updateVisibleITems(filterData);
-        console.log(filterData, "Data is Filter");
 
     }, 300);
 })
@@ -67,7 +61,7 @@ function updateVisibleITems(dataList) {
     if (dataList.length === 0) {
         resultList.innerHTML = "<li> No Data Found </li>"
     } else {
-        for (let i = 0; i < dataList.length; i++) {
+        for (let i = 0; i < dataList.length; i++) { 
             let formatedRecord = formatFilteredData(dataList[i], i + 1);
             let listItem = document.createElement("li");
             listItem.textContent = formatedRecord;
