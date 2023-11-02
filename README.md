@@ -1,7 +1,7 @@
 # Frontend Test
 Ne HTML , CSS dhe JavaScript ( pa perdorur librari ) krijoni:
 
-- Nje file inpun i cili ngarkon , lexon dhe parson skedarin qe ndodhet brenda test1M.zip
+- Nje file input i cili ngarkon , lexon dhe parson skedarin qe ndodhet brenda test1M.zip
   dhe shfaq elementet ne DOM sipar formatit te paraqitu ne video.
 
 - Lartesia e secilit element te listes te jete 30px.
